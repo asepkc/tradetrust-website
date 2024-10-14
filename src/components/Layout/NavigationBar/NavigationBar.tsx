@@ -59,7 +59,7 @@ export const rightNavItems: NavigationItem[] = [
 const NavLogo = () => {
   return (
     <a href={`${URLS.INFO}`} data-testid="nav-logo-home">
-      <img src="/static/images/tradetrust_logo.svg" alt="TradeTrust Logo" />
+      <img src="/static/images/knowledgecatalyst-logo-black.webp" alt="TradeTrust Logo" />
     </a>
   );
 };

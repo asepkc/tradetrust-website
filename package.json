@@ -19,7 +19,7 @@
     "build:sitemap": "npx ts-node --compiler-options '{\"module\":\"commonjs\"}' sitemap.ts",
     "check-types": "tsc --sourceMap false --noEmit",
     "credits": "npx @opengovsg/credits-generator && npx mdpdf ./CREDITS.md ./public/static/common/credits.pdf",
-    "dev": "run-p dev:*",
+    "dev": "PORT=3001 run-p dev:*",
     "dev:css": "npx tailwindcss -i ./src/tailwind.css -o ./src/index.css --watch",
     "dev:serve": "sleep 2 && cross-env NODE_ENV=development webpack serve",
     "integration": "testcafe chrome src/**/*.spec.ts",

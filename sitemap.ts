@@ -27,7 +27,7 @@ const cmsDetailPages: SitemapRecord[] = [];
 
 const allPages = [...mainPages, ...cmsDetailPages];
 
-const sitemap = new SitemapStream({ hostname: "https://www.tradetrust.io" });
+const sitemap = new SitemapStream({ hostname: "https://www.knowledgecatalyst.io" });
 const sitemapPath = path.join(__dirname, "public", "static");
 fs.mkdirSync(sitemapPath, { recursive: true });
 const writeStream = fs.createWriteStream(path.join(sitemapPath, "sitemap.xml"));

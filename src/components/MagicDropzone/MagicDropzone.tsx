@@ -10,7 +10,6 @@ import { DetailedErrors } from "../DocumentDropzone/DetailedErrors";
 import { updateDemoDocument, resetDemoState } from "../../reducers/demo-verify";
 import { getDropzoneBoxUi } from "./../../common/utils/getDropzoneBoxUi";
 import { GaAction, GaCategory } from "../../types";
-import { URLS } from "../../constants";
 
 interface MagicDropzoneViewProps {
   isPending: boolean;
@@ -41,18 +40,6 @@ const MagicDropzoneView: FunctionComponent<MagicDropzoneViewProps> = ({ isPendin
             </div>
           </div>
           <DetailedErrors verificationStatus={verificationStatus} verificationError={verificationError} />
-          <a
-            href={URLS.FAQ}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => {
-              e.stopPropagation();
-            }}
-          >
-            <Button className="text-white bg-scarlet-500 border-scarlet-500 hover:bg-scarlet-400 hover:border-scarlet-400">
-              What Should I do?
-            </Button>
-          </a>
           <br />
           <div
             data-testid="try-another"
@@ -77,7 +64,7 @@ const MagicDropzoneView: FunctionComponent<MagicDropzoneViewProps> = ({ isPendin
             alt="Magic Dropzone TradeTrust"
             src="/static/images/dropzone/dropzone_illustration.svg"
           />
-          <h4>Drop your TradeTrust demo document to view its content</h4>
+          <h4>Drop your Knowledecatalyst demo document to view its content</h4>
           <p className="my-6">Or</p>
           <Button className="bg-cerulean-500 text-white hover:bg-cerulean-800" size={ButtonSize.SM}>
             Select Demo Document
