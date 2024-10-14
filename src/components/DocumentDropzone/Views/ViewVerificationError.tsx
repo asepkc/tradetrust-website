@@ -1,10 +1,7 @@
 import React, { FunctionComponent } from "react";
-import { Button } from "@tradetrust-tt/tradetrust-ui-components";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../reducers";
 import { DetailedErrors } from "../DetailedErrors";
-import { URLS } from "../../../constants";
-
 interface ViewVerificationErrorProps {
   resetData: () => void;
 }
@@ -23,20 +20,7 @@ export const ViewVerificationError: FunctionComponent<ViewVerificationErrorProps
         </div>
       </div>
       <DetailedErrors verificationStatus={verificationStatus} verificationError={verificationError} />
-      <a
-        href={URLS.FAQ}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={(e) => {
-          e.stopPropagation();
-        }}
-      >
-        <Button
-          className={`text-white bg-scarlet-500 border-scarlet-500 hover:bg-scarlet-400 hover:border-scarlet-400`}
-        >
-          What Should I do?
-        </Button>
-      </a>
+
       <br />
       <div
         data-testid="try-another"
